@@ -1,0 +1,90 @@
+/*
+El selector universal afecta a todos los tags HTML
+*/
+* {
+    color: red
+}
+
+/*
+Un selector de tipo elige a que tag HTML le vamos a aplicar los estilos
+*/
+body {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+h2 {
+    color: steelblue;
+}
+
+/*
+Selector de clase, permite aplicar estilos a todos los elementos que tengan la 
+clase escrita en el atributo class del tag HTML
+*/
+.borde {
+    border: 1px solid black;
+}
+
+.titulo {
+    font-weight: 700;
+    text-align: center;
+}
+
+.😁 {
+    color: darkblue;
+}
+
+.😂 {
+    border: 1px solid black;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/*
+Selector por identificador, permite aplicar estilos al elemento HTML que tenga asignado
+el ID respectivo
+*/
+
+#section {
+    border: 1px solid black;
+}
+
+/*
+Selector de atributo, permite seleccionar etiquetas HTML basado en el valor de un atributo
+*/
+
+/*Aplica a cualquier etiqueta que tenga el atributo href independientemente de su valor*/
+/* [href]{} */
+
+/*Aplica a cualquier etiqueta h2 que contenga el atributo class independientemente de su valor*/
+/* h2[class] {} */
+
+[href] {
+    text-decoration: none;
+}
+
+[href="https://google.com"] {
+    color: sienna;
+}
+
+/*
+Aplica a cualquier etiqueta que en su atributo href inicie con ws
+*/
+[href^="ws"] {
+    color: darkmagenta;
+}
+
+/*
+Aplica a cualquier etiqueta que en su atributo href finalice con org
+*/
+[href$="org"] {
+    background-color: aquamarine;
+}
+
+/*
+Aplica a cualquier etiqueta que en su atributo href su valor tenga a la palabra gmail
+*/
+[href*="gmail"] {
+    background-color: darkcyan;
+}

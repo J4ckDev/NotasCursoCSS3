@@ -1,0 +1,59 @@
+body {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+h2,
+h3 {
+    color: indigo;
+    font-size: 24px;
+}
+
+/*Selecciona a todas las etiquetas nav que tienen la clase contenedor*/
+nav.contenedor {
+    background-color: steelblue
+}
+
+/*
+Combinador de descendientes
+Selecciona etiquetas que son descendientes del primer selector, en este ejemplo
+selecciona a todas las etiquetas de tipo p contenidos en etiquetas con la clase
+contenedor
+*/
+.contenedor p, .contenedor>a {
+    font-weight: 600;
+}
+
+/*
+Combinador de hijos directos
+Permite aplicar estilos a todas las etiquetas que son hijos directos del primer selector,
+en este ejemplo selecciona a todas las etiquetas p que son hijos directos de las etiquetas
+con la clase contenedor
+*/
+.contenedor>p {
+    color: darkcyan;
+}
+
+.contenedor a {
+    text-decoration: none;
+    color: firebrick
+}
+
+/*
+COmbinador de hermano adyacente
+Permite aplicar estilos que inmediatamente es el hermano del primer selector,
+en este ejemplo se aplica estilos a un elemento p que está después de un h2
+*/
+h2+p{
+    color:darkgoldenrod;
+}
+
+/*
+Combinador de elementos hermanos
+Permite aplicar estilos a todos los elementos que tengan como hermano al primer selector,
+en este ejemplo se aplica estilos a todos los elementos p que están despues de un elemento h3
+*/
+h3~p{
+    color:darkgreen;
+}
