@@ -1,0 +1,86 @@
+* {
+  /* Por defecto el box-sizing es de content-box, haciendo que el tamaño del contenido + el padding
+  + el borde, genere un elemento más altó y/o más ancho de lo definido con las propiedades
+  width y height. POr lo que para contrarrestar esto podemos definir que el box-sizing sea de
+  border-box, así automáticamente los elementos se ajustan a que esa suma sea el ancho o alto esperado.*/
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Si no existiera contenido en el tag HTML y no se define el alto, el ancho, un padding y un border,
+no aparecerá nada cuando el navegador renderice la página web.*/
+.box {
+  width: 200px;
+  height: 80px;
+}
+
+.box1 {
+  background-color: steelblue;
+
+  border: 2px solid black;
+
+  /* Todos los lados comparten el mismo margen */
+  margin: 80px;
+
+  /* El eje vertical comparte una misma medida y el eje horizontal otra medida */
+  /* margin: 80px 40px; */
+
+  /* Todos los márgenes tienen un valor diferente en el orden top, right, bottom, left*/
+  /* margin: 80px 40px 20px 0px; */
+
+  /* Si el elemento el elemento es de tipo bloque (display:block) y no son elementos en línea y
+  se tiene un ancho definido (usando la clase box ya se tiene un ancho de 200px), al usar margin: auto
+  es posible centrar un elemento */
+  /* margin: auto; */
+
+  /* Más adelante con flexbox, el margin auto podría dar problemas, por lo que es conveniento especificar
+  que solo el margen del eje x va a tener un margin auto */
+
+  /*Forma corta*/
+  /* margin: 0 auto;  */
+
+  /*Forma larga*/
+  /* margin-left: auto; 
+  margin-right: auto; */
+}
+
+.box2 {
+  background-color: darkred;
+  color: whitesmoke;
+  /*En el colapso de márgenes, aunque esta caja tenga un margin definido, no se va a sumar con
+  el margen de box 1, simplemente se aplica el margen con el valor más alto, en este caso el de
+  box2*/
+  margin-top: 96px;
+
+  /* Como la caja es pequeña para todo el texto se pueden hacer 2 cosas, o darle un overflow hidden,
+  o al alto darle un fit content. Dependiendod de la necesidad */
+  /* overflow: hidden; */
+  height: fit-content;
+}
+
+.box3 {
+  background-color: darkblue;  
+  width: 200px;
+  height: 60px;
+  padding: 0;
+  margin-top: 8px;
+  /* Para evitar que los márgenes del hijo del elemento que tenga esta clase altere el comportamiento
+  de los márgenes, solo basta con agregar un borde de 1 pixel o adicionar un padding */
+  /* border: 1px solid darkblue; */
+  padding: 1px;
+}
+
+.box4 {
+  background-color: gold;
+  width:100%;
+  height: 20px;
+  /*Cuando el elemento padre de este elemento no tiene padding y tampoco bordes, si al
+  hijo se le define un margin, el padre es como si heredara ese margen y lo que hace es mover
+  al padre y no al hijo como se esperaría. Ahora si el padre tiene un margen, aplica lo mismo
+  del colapso de márgenes, se aplica el de mayor valor*/
+
+  margin-top: 20px;
+}
