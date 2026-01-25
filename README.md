@@ -7,3 +7,5 @@ Con el objetivo de repasar los conocimientos de CSS realicé un curso corto para
 2. En la carpeta de [Box Model](./Box%20Model/) puedes comprender como se maneja el modelo de caja compuesto por el alto, el ancho, el contenido, el padding o relleno, y el margin o margen.
 
 3. En la carpeta [Especificidad](./Especificidad) puede comprenderse un tema importante de como el navegador define que estilos aplicar. Más contenido de este tema [aquí](https://developer.mozilla.org/docs/Web/CSS/Specificity).
+
+4. En la carpeta [Bordes](./Bordes) encontrarás como aplicar diferentes estilos de bordes y sombras en elementos HTML.

@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.img {
+  display: block;
+  width: 400px;
+  margin: 30px auto;
+  /* box-shadow: 8px 8px 12px rgba(224, 31, 69, 0.712); */
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.50);
+}
+
+.box {
+  width: 120px;
+  height: 120px;
+  margin: 32px;
+  background: steelblue;
+  /* box-shadow: desplazamiento-horizontal desplazamiento-vertical difuminación spread (cuanto-se-esparce-la-sombra) color-de-la-sombra
+  solo con colocar los dos primeros valores, por defecto la difumiación (blur) será 0, el spread será 0 y
+   el color será currentColor (hereda el color definido con la propiedad color)*/
+
+  /* box-shadow: 8px 8px; es equivalente a box-shadow: 8px 8px 0 0 currentColor; */
+
+  /* box-shadow: 12px 8px 0 16px crimson; */
+
+  /* Se pueden agregar más sombras */
+  box-shadow:
+    120px 120px 0 0 crimson,
+    120px 0 0 0 darkblue,
+    0px 120px 0 0 darkgoldenrod;
+}

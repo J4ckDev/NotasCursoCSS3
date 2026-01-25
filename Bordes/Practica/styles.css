@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.card {
+  width: 320px;
+  margin: 28px auto;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.4);
+  height: fit-content;
+}
+
+.img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 16px 16px 24px 16px;
+}
+
+/* Generador de colores a partir de una imagen
+https://www.canva.com/colors/color-palette-generator/ */
+.title {
+  color: #a60909;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.text {
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.btn {
+  display: block;
+  width: fit-content;
+  background-color: #a60909;
+  padding: 12px 16px;
+  margin: 0 auto;
+  text-decoration: none;
+  color: #f4f4f4;
+  border-radius: 4px;
+}
+
+.goku {
+  display: block;
+  width: 320px;
+  margin: 40px auto;
+  /* Cuando trabajamos con imágenes que no tienen fondo
+  box-shadow no nos sirve, ya que mostraría la sombra
+  alrededor del contorno de la imagen. */
+  /* box-shadow: 8px 8px #dc9d47; */
+
+  /* Para solucionar el problema anterior se usa drop-shadow con la propiedad filter, esto nos permite
+  generar la sombra en el contorno del contenido de la imagen.
+
+  Se puede quitar el fonde de una imagen en https://www.remove.bg/es
+  */
+
+  filter: drop-shadow(0 0 32px #f7bf06)
+}
