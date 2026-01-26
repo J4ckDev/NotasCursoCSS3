@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 40px 0;
+
+  /* Se pueden definir colores por alguno de los nombres por defecto */
+  /* color: darkblue; */
+
+  /* Se puede definir por canal RGB con valores entre 0 y 255 */
+  /* background-color: rgb(20, 40, 80); */
+
+  /* Si deseo transparencia puedo usar RGBA, donde RGB son los canales de colores entre
+  0 y 255, y el canal Alfa entre 0 y 1 para la transparencia */
+  background-color: rgba(20, 40, 80, 0.9);
+
+  /* Se puede definir por código hexadecimal, donde cada par de números representa el 
+  canal RGB #RRGGBB */
+  /* color: #f4f4f4; */
+
+  /* También el código también tiene un canal alfa adicionando otro par de letras más */
+  /* color: #f4f4f480; */
+
+  /* Otra alternativa es usar hsl(), la cual permite configurar el matiz (hue) que representa 
+  un color mediante un ángulo del círculo cromático (valores entre 0 y 360), la saturación
+  del color (valores entre 0% a 100%), y la luminosidad del color (valores entre 0% a 100%) */
+  /* Si la luminosidad tiende a 0%, no importa el color elegido ni su saturación,
+ este tenderá a ser negro; y si la luminosidad tiende a 100%, no importa el color elegido 
+ ni su saturación, el color tenderá a ser blanco */
+  /* Si la saturación del color tiende a 0%, este podrá tomar un color grisaceo dependiendo de
+ la luminosidad. Y si la saturación es del 100%, el color podrá verse más vivo, aunque dependiendo
+  de la luminosidad.*/
+  /* color: hsl(45, 100%, 60%); */
+
+  /* Una versión más reciente para configurar colores es oklch, el cuál permite definir
+  colores más reales a los que percibe un ojo humano, además es mucho mas predecible a la
+  hora de elegir una gama de colores. Es importante tener en cuenta que algunos colores que genera 
+  este espacio de color es probable que algunas pantallas no las soporte y obligue al navegador
+  a configurar el color más cercano al obtenido. Para las pantallas de los dispositivos Apple, 
+  este espacio de color es más ampliamente soportado.
+  
+  oklch(Luminosidad(lightness) Saturación(Chroma) Matiz(hue) / Opacidad(Para transparencia))
+
+  La luminosidad está entre 0 y 1, o usando porcentajes entre 0% y 100%
+  La saturación va desde 0 al infinito, pero en la realidad el limite lo define la gama de 
+  colores que soporta una pantalla. POr ejemplo una pantalla que soporte sRGB, el valor máximo que
+  soporta puede llegar hasta 0.37.
+    El matiz es un ángulo que va desde 0 a 360. NO es el mismo del círculo cromático, pero funciona de
+    forma parecida. Ángulo 0 o 360 se encuentra el color magenta, entre el 20 a 30 se encuentran tonos rojos,
+entre 30 y 70 se encuentran los tonos anaranjados, entre el 80 y 110 los tonos amarillos, entre 120 y 150 los tonos verdosos,
+entre el 170 y 270 los tonos azules, y los tonos púrpura o magenta según la luminosidad de 280 en adelante.
+
+Más info de esto en https://evilmartians.com/chronicles/oklch-in-css-why-quit-rgb-hsl
+Calculadora de okclh https://oklch.com/#0.8308,0.0951,86.53,100
+  */
+
+  /* color: oklch(1 0 0);
+  color: oklch(0 0 0); */
+  color: oklch(0.83 0.16 86);
+}
+
+.title {
+  text-align: center;
+}
+
+/* Algunos recursos para generar paletas de colores
+https://flatuicolors.com/
+https://coolors.co/?home
+https://htmlcolorcodes.com/es/
+https://www.toptal.com/designers/colourcode
+*/

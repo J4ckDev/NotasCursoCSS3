@@ -9,3 +9,5 @@ Con el objetivo de repasar los conocimientos de CSS realicé un curso corto para
 3. En la carpeta [Especificidad](./Especificidad) puede comprenderse un tema importante de como el navegador define que estilos aplicar. Más contenido de este tema [aquí](https://developer.mozilla.org/docs/Web/CSS/Specificity).
 
 4. En la carpeta [Bordes](./Bordes) encontrarás como aplicar diferentes estilos de bordes y sombras en elementos HTML.
+
+5. En la carpeta [Colores](./Colores) encontrarás como manejar los colores de las formas más usadas.
