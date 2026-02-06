@@ -11,3 +11,5 @@ Con el objetivo de repasar los conocimientos de CSS realicé un curso corto para
 4. En la carpeta [Bordes](./Bordes) encontrarás como aplicar diferentes estilos de bordes y sombras en elementos HTML.
 
 5. En la carpeta [Colores](./Colores) encontrarás como manejar los colores de las formas más usadas.
+
+6. En la capeta [Fondos](./Fondos) hay ejemplos de como aplicar el background en los elementos HTML y adicionalmente aplicar gradientes.

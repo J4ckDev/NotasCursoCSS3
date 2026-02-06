@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./img/textura.png);
+}
+
+.container {
+  width: 70%;
+  height: 320px;
+  margin: 32px auto;
+  background-color: steelblue;
+  /* Puede asignar 1 o más imágenes de fondo al separar por comas */
+  background-image: url(./img/spidy.png), url(./img/cloud.png);
+  /* Indicar el comportamiento de como se debe repetir la imagen. Por defecto es repeat */
+  background-repeat: no-repeat;
+  /* Altera el posicionamiento de las imágenes en los ejes X y Y, puedo indicar por pixeles
+  o con las palabras reservadas top, right, center, left y bottom */
+  background-position: center center;
+  /* Especifica como deben acomodarse las imágenes del fondo, puedo usar pixeles y las
+  palabras reservadas contain (ajusta el tamaño de la imagen al contenedor), 
+  cover (funciona como contain con la excepción que puede recortar la imagen para
+  ajustarla al tamaño del contenedor) o auto(valor por defecto.)*/
+  background-size: 120px, 120px;
+}
+
+.attachment {
+  display: inline-table;
+  width: 40%;
+  height: 400px;
+  background-image: url(./img/img-hero.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 40px;
+}
+
+.fixed {
+  /* Con fixed mantiene la imagen estática haciendo un efecto que al hacer scroll, 
+    se conoce como efecto parallax */
+  background-attachment: fixed;
+}
+
+.title {
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #fff;
+  margin-top: 40px;
+}
+
+#gradientes {
+  width: 100%;
+  height: fit-content;
+  background-color: white;
+  padding: 24px;
+}
+
+#gradientes > h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+}
+
+.gradcontainer {
+  width: 80%;
+  height: 400px;
+  margin: 30px auto;
+  background: steelblue;
+  /* background-image: linear-gradient(dirección, color stop, color stop); */
+
+  /* Por defecto la dirección es de arriba hacia abajo (to bottom)*/
+  /* background-image: linear-gradient(to bottom, red, orange, steelblue);  */
+  background-image: linear-gradient(red, orange, steelblue);
+
+  /*  Abajo hacia arriba */
+  background-image: linear-gradient(to top, red, orange, steelblue);
+
+  /* De izquierda a derecha */
+  background-image: linear-gradient(to right, red, orange, steelblue);
+
+  /* De derecha a izquierda */
+  background-image: linear-gradient(to left, red, orange, steelblue);
+
+  /* Diagonal de inferior izquierda a superior derecha */
+  background-image: linear-gradient(to top right, red, orange, steelblue);
+
+  /* Diagonal de inferior derecha a superior izquierda */
+  background-image: linear-gradient(to top left, red, orange, steelblue);
+
+  /* Diagonal de superior derecha a inferior izquierda */
+  background-image: linear-gradient(to bottom left, red, orange, steelblue);
+
+  /* Diagonal de superior izquierda a superior derecha */
+  background-image: linear-gradient(to bottom right, red, orange, steelblue);
+
+  /* Se pueden usar ángulos */
+  background-image: linear-gradient(80deg, red, orange, steelblue);
+
+  /* De derecha a izquierda con stop aplicado*/
+  background-image: linear-gradient(
+    to left,
+    red 10%,
+    orange 50%,
+    steelblue 90%
+  );
+
+  /* Gradiente radial */
+  background-image: radial-gradient(circle, red 20%, orange 30%, steelblue 60%);
+
+  /* Páginas para generar gradientes
+    https://cssgradient.io/
+    
+  */
+}
+
+.header {
+  height: 600px;
+  background-image:
+    linear-gradient(
+      to top left,
+      rgba(0, 1, 80, 0.815),
+      rgba(0, 83, 121, 0.445)
+    ),
+    url("./img/hero.jpg");
+
+  /* Colores que simulan un filtro */
+  background-image:
+    linear-gradient(120deg, #a6c0fe7e, #f680848f), url("./img/hero.jpg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gradtitle {
+  font-size: 32px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  top: 50%;
+}
