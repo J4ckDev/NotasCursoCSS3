@@ -13,3 +13,5 @@ Con el objetivo de repasar los conocimientos de CSS realicé un curso corto para
 5. En la carpeta [Colores](./Colores) encontrarás como manejar los colores de las formas más usadas.
 
 6. En la capeta [Fondos](./Fondos) hay ejemplos de como aplicar el background en los elementos HTML y adicionalmente aplicar gradientes.
+
+7. En la carpeta [Textos](./Textos/) hay ejemplos de la manipulación de textos con CSS3.

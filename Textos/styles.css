@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #9ab1f6;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  background: #f0f0f0;
+  width: 80%;
+  margin: 30px auto;
+  padding: 20px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center; /*Alinear un texto a la derecha, izquierda, centro o justificado */
+}
+
+.container h1 {
+  text-align: left;
+  /* Con letter-spacing puedo especificar la separación entre las letras. Por defecto está
+  en normal (valor de espaciado usado por la fuente usada actualmente). El espaciado se puede
+  indicar por valor en px, rem, em, etc. También admite valores negativos*/
+  letter-spacing: 4px;
+  /* Si queremos manipular si las letras de un texto sean mayúsculas, minúsculas o si deseamos
+  capitalizar la primera letra de cada palabra independientemente de como fueron escritas, 
+  podemos usar text-transform. Por defecto está en none. */
+  text-transform: uppercase;
+
+  font-size: 28px;
+}
+
+.copy {
+  /* No es recomendado por la separación entre las palabras, pero por el ejemplo de
+    que se puede hacer está bien. */
+  text-align: justify;
+
+  /* Permite adicionar sombras al texto */
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+
+  /* El estilo de la fuente Indica que tan inclinada estará la fuente. Por defecto será normal. */
+  /*Inclina la fuente*/
+  /* font-style: italic;  */
+  /* Más inclinada que la itálica*/
+  /* font-style: oblique;  */
+
+  /*Permite que todas las letras del texto sean mayúsculas, pero las letras que ya
+  sean mayúsculas o letras minúsculas que sean afectadas por text-transform: uppercase,
+  hace que en el texto las letras se vean más grandes. Por defecto está en normal.
+  */
+  /* font-variant: small-caps; */
+
+  /* Indica que tan ancha o delgada será el trazo de la letra. Para títulos usualmente 
+  se usa bold o negrita. Por defecto está en normal o 400.*/
+  /* font-weight: 300; */
+
+  /* Indica el tamaño de la fuente */
+  /* font-size: 12px; */
+
+  /* Para especificar la separación entre líneas de texto, puedo usar line-height. Por
+  defecto está en normal, el cuál indica a los navegadores que computen un valor para
+  la fuente utilizada. Si se ponen números sin acompañarlo de medidas, va a multiplicar el
+  tamaño del font-size.*/
+  /* line-height: 32px; */
+  /* line-height: 2; */
+
+  /* Indica la familia de fuentes a utilizar */
+  /* font-family: "League Spartan", sans-serif; */
+
+  /* Ahora si todo lo anterior lo quiero especificar con el short-hand, sería de la siguiente forma:*/
+  /* font: style variant size/line-height family */
+  font:
+    oblique small-caps 300 20px/32px "League Spartan",
+    sans-serif;
+}
+
+.bold {
+  color: crimson;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Cuando la imagen está dentro de un contenedor padre de tipo bloque, 
+se va a tratar como texto y text-align lo va a afectar. */
+.img {
+  width: 100%;
+}
+
+.enlace {
+  color: #1f1f1f;
+  /* Especifica la separación entre palabras. Por defecto está en normal (0 de espaciado extra). */
+  word-spacing: 20px;
+  /* Para adicionar o quitar el subrayado de un texto se utiliza el short-hand text-decoration.
+   text-decoration: linea estilo color 
+   En los enlaces por defecto tiene un text-decoration: underline solid currentColor;
+   Para quitarlo se usa la palabra none */
+  /* text-decoration: none; */
+
+  /* text-decoration: underline solid rgba(180, 50, 80, 80); */
+
+  /* El overline se podría usar dejar el espacio de Firme ahora */
+  /* text-decoration: overline solid black; */
+
+  /* Tachar el texto */
+  text-decoration: line-through solid black;
+
+  /* Si queremos más especificidad de la siguiente forma se puede desglosar lo
+   anterior y se pueden combinar lineas*/
+  text-decoration-line: overline underline;
+
+  /* Permite especificar el estilo de la linea.*/
+  /* text-decoration-style: dotted; */
+  /* text-decoration-style: double; */
+  /* text-decoration-style: dashed; */
+  /* text-decoration-style: solid; */
+  text-decoration-style: wavy;
+
+  /* Por último el color de las lineas */
+  text-decoration-color: darkred;
+}
+
+.card {
+  font-family: "League Spartan", sans-serif;
+  background-image: linear-gradient(#f4f4f4f3, #f4f4f465),url(./img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 400px;
+  margin: 20px auto;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: right;
+}
+
+.title {
+  font-size: 28px;
+  color: rgb(0, 67, 94);
+  border-bottom: 4px solid rgb(0, 67, 94);
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.text{
+    line-height: 2;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+.bolder{
+    font-weight: bolder;
+}
+
+.cta {
+    display: inline-block;
+    width: fit-content;
+    color: #f4f4f4;
+    background-color: rgb(0, 86, 134);
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 12px 16px;
+}
