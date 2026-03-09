@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* html {
+  font-size: 16px;
+} */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f2f2;
+  font-size: 8px;
+}
+
+.opinion {
+  /* La unidad relativa em depende del font-size definido en el elemento donde es definido, y en caso de que ese elemento no cuente
+  con un font-size definido, usará la medida definida en el padre. 
+
+  Otra característica es que se puede acumular en cascada en caso de que el font-size del elemento, dependa del em del elemento padre.
+  
+  Esta medida relativa usualmente la utilizan para definir el width, height, border y en el padding.
+  */
+  /* 8px del body * 2 = 16px */
+  font-size: 2em;
+  /* Padding tendrá 16px * 2 = 32px */
+  padding: 2em;
+  width: 80%;
+  margin: 40px auto;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  /* La unidad relativa rem depende del font-size definido en el elemento html, si en el css no se define el font-size, este
+  rem dependerá enteramente del font-size que defina el user-agent dependiendo de su configuración, si por ejemplo en Chrome se define
+  en la configuración de aspecto en el apartado de tamaño de la fuente un tamaño muy pequeño, el user-agent configurará un font-size de 8px. POr
+  defecto los navegadores configuran un font-size de 16px.
+  
+  Si deseamos controlar el tamaño de letra a partir de un rem definido, en la etiqueta html definimos el font-size deseado.
+  
+  Se recomienda usar rem para manejar el tamaño de los textos.
+  */
+  font-size: 2rem;
+}
+
+.text {
+  font-size: 1.2rem;
+}
+
+.container {
+  /* Aquí se aplica un width 400px porque al ser un elemento bloque este debería tener un width de 100%, pero por ese límite se aplica
+  el límite.*/
+  max-width: 400px;
+  max-height: 400px;
+  min-width: 200px;
+  min-height: 200px;
+  /* Cuando coloco un width menor al mínimo, CSS mira el tamaño mínimo y lo aplica por ser el más cercano. */
+  width: 100px;
+  height: 100px;
+  font-size: 16px;
+  background-color: steelblue;
+  margin: 30px auto;
+}
+
+.children {
+  /* Cuando se trabajan con porcentajes, estos se aplican basándose las medidas fijas del padre. En el caso del height y el width, debe tener 
+  un valor fijo en el padre para que se aplique el porcentaje */
+  width: 100%;
+  height: 25%;
+  background-color: crimson;
+}
+
+.viewport-container {
+  /* Sí se desea depender de las medidas de la ventana del navegador, se usan las medidas
+  del viewport, donde vw es el viewport-width y vh es el viewport-height. Cada unidad del viewport
+  equivale a un 1%*/
+  background-color: darkcyan;
+  width: 10vw;
+  height: 20vh;
+}

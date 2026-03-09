@@ -15,3 +15,5 @@ Con el objetivo de repasar los conocimientos de CSS realicé un curso corto para
 6. En la capeta [Fondos](./Fondos) hay ejemplos de como aplicar el background en los elementos HTML y adicionalmente aplicar gradientes.
 
 7. En la carpeta [Textos](./Textos/) hay ejemplos de la manipulación de textos con CSS3.
+
+8. Para las unidades de medida, en la carpeta [Medidas](./Medidas/) hay ejemplos de uso.
