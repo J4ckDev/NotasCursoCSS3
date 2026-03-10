@@ -1,0 +1,62 @@
+/* Se pueden descargar íconos en la página web https://boxicons.com/ e imágenes en https://unsplash.com/es */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Si coloco un padding de cero, los puntos de lista desordenada y los número de lista 
+ordenada desaparecen. Esto ocurre porque los list-style-position de ambos elementos
+html están outside, si estuviera inside se siguen viendo*/
+/* ul,
+ol {
+  padding: 0;
+  list-style-position: inside;
+} */
+
+ul,
+ol {
+  margin: 30px 0;
+}
+
+ul {
+  /* Con la propiedad list-style-type puedo controlar los indicadores de la lista
+    por defecto en ul está en disc. 
+    */
+  list-style-type: none;
+
+  /* Para colocar una imagen como indicador de lista puedo usar la propiedad list-style-image */
+  list-style-image: url("./img/arrow-left.png");
+
+  /* Para indicar la posición de donde debe estar el indicador se utiliza list-style-position, 
+    por defecto está outside */
+  list-style-position: inside;
+}
+
+ol {
+  /*  Lo mismo que con ul, en este caso por defecto está en decimal */
+  list-style-type: lower-roman;
+}
+
+.lista {
+  background-color: darksalmon;
+}
+
+figure {
+  width: 200px;
+  height: 400px;
+  background: crimson;
+  margin: 30px auto;
+  box-shadow: 0 0 12px rgba(0,0,0,0.5)
+}
+
+.img {
+  width: inherit;
+  height: inherit;
+  /* Object-fit permite ajustar como es presentada la imagen */
+  object-fit: cover;
+}

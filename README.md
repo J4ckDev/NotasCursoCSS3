@@ -16,4 +16,6 @@ Con el objetivo de repasar los conocimientos de CSS realicé un curso corto para
 
 7. En la carpeta [Textos](./Textos/) hay ejemplos de la manipulación de textos con CSS3.
 
-8. Para las unidades de medida, en la carpeta [Medidas](./Medidas/) hay ejemplos de uso.
+8. Para las unidades de medida básicas, en la carpeta [Medidas](./Medidas/) hay ejemplos de uso.
+
+9. Para comprender el manejo de listas e imágenes, hay ejemplos en la carpeta [Listas](./Listas/).
