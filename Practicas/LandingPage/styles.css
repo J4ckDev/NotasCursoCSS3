@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 32px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#cover {
+  background-image: url("./img/cover.jpg");
+  height: 100vh;
+}
+
+#practica {
+  background-image: url("./img/practica.png");
+  height: 80vh;
+}
+
+#practica > .title {
+  /* Resté 1.4375rem porque 1rem es del padding-top del contenedor padre 
+  y 0.4375rem es la mitad del tamaño de la letra del título secundario*/
+  margin-top: calc(40vh - 1.4375rem);
+}
+
+#fin {
+  background-image: url("./img/fin.png");
+  height: 100vh;
+}
+
+#fin > .title {
+  margin-top: calc(50vh - 1.4375rem);
+}
+
+.bg-image {
+  text-align: center;
+  padding: 1rem;
+  display: block;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.txt-section {
+  display: block;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+.title {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.main-title {
+  color: #f1f1f1;  
+  font-size: 1rem;
+  background-color: rgba(0,0,0,0.8);
+  width: fit-content;
+  /* Resté 2.5rem porque 1rem es del padding-top del contenedor padre, 
+  1rem del padding del título y 0.5rem es la mitad del tamaño de letra del título principal */
+  margin: calc(50vh - 2.5rem) auto 0 auto;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.secondary-title {
+  color: #f1f1f1;  
+  font-size: 0.875rem;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.third-title {
+  font-size: 0.75rem;
+}
+
+.text {
+  font-family: "Zilla Slab", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.625rem;
+  margin: 0;
+  padding: 0;
+}

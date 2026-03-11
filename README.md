@@ -19,3 +19,5 @@ Con el objetivo de repasar los conocimientos de CSS realicé un curso corto para
 8. Para las unidades de medida básicas, en la carpeta [Medidas](./Medidas/) hay ejemplos de uso.
 
 9. Para comprender el manejo de listas e imágenes, hay ejemplos en la carpeta [Listas](./Listas/).
+
+10. Con el objetivo de practicar lo que se ha visto hasta el momento, dentro de la carpeta [Practicas](./Practicas/) se ubica la carpeta [LandingPage](./Practicas/LandingPage/), donde doy mi solución a la práctica propuesta.
