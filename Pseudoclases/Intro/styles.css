@@ -1,0 +1,143 @@
+/* Seleccionar a la raíz del documento html */
+/* Se utiliza para definir estilos para toda la página o para colocar variables a las que puede
+acceder desde cualquier lugar */
+:root {
+    background-color:burlywood
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Las pseudoclases son similares a los selectores, la diferencia es que sirven para referenciar a los 
+estados de un elemento y dependiendo de ese estado se aplican ciertos estilos,
+por ejemplo cuando pasa el cursor sobre un botón o enlace, se oscurece el color de fondo. 
+
+Las pseudoclases adicionan especificidad de 10*/
+
+.enlace {
+  display: block;
+  color: #f1f1f1;
+  padding: 16px;
+  text-decoration: none;
+  border-bottom: 4px solid #464646;
+}
+
+/* Elementos a que no han sido visitados */
+.enlace:link {
+  background-color: darkblue;
+}
+
+/* Elementos a que fueron visitados */
+.enlace:visited {
+  background-color: darkgreen;
+}
+
+/* Pasar el cursor sobre un elemento */
+.enlace:hover {
+  background-color: darkred;
+}
+
+/* Hacer clic sobre el elemento */
+.enlace:active {
+  background-color: darkcyan;
+  color: black;
+}
+
+.event {
+  display: inline-block;
+  margin-top: 28px;
+  margin-left: 20px;
+  background-color: darkmagenta;
+  color: #f1f1f1;
+  text-decoration: none;
+  padding: 8px 12px;
+}
+
+.event:active{
+    padding: 12px 16px;
+}
+
+#objetivo {
+    width: 120px;
+    height: 120px;
+    margin-top: 28px;
+    margin-left: 20px;
+    background-color: steelblue;
+    transition: 0.3s;
+}
+
+/* Dar estilos cuando se selecciona un elemento a través de su id por URL */
+#objetivo:target {
+    margin-left: 140px;
+}
+
+.form{
+    width: 80%;
+    margin: 20px auto;
+    background-color: rgb(231, 231, 231);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.7);
+}
+
+/* Aplicar estilos cuando los hijos del contenedor que tengan foco */
+.form:focus-within {
+    background-color: rgb(176, 209, 119);
+}
+
+.form__title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form>input{
+    display: block;
+}
+
+.form>input[type="checkbox"]{
+    display: inline-block;
+}
+
+.form>input[type="text"],.form>input[type="email"]{
+    width: 100%;
+    padding: 12px 12px;
+    margin-bottom: 12px;
+    border:none;
+}
+
+/* Colocar estilos cuando un elmento tiene el foco */
+.form>input:focus{
+    background-color: rgb(183, 228, 255);
+}
+
+/* Aplicar estilos cuando un checkbox está seleccionado */
+.form>input[type="checkbox"]:checked + label{
+    color: darkgreen;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Aplicar estilos a algo que no tenga x cosa. Por ejemplo, el color del texto se aplica a elementos que no tengan la clase title */
+/* h3:not(.title){
+    color: darkslategrey;
+} */
+
+/* not también se puede encadernar. EN este caso aplica el color del texto a los elementos que no tengan la clase title y no tengan 
+el estado hover */
+h3:not(.title):not(:hover){
+    color: darkslategrey;
+}
+
+h3:not(:hover){
+    text-decoration: line-through;
+}

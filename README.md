@@ -21,3 +21,5 @@ Con el objetivo de repasar los conocimientos de CSS realicé un curso corto para
 9. Para comprender el manejo de listas e imágenes, hay ejemplos en la carpeta [Listas](./Listas/).
 
 10. Con el objetivo de practicar lo que se ha visto hasta el momento, dentro de la carpeta [Practicas](./Practicas/) se ubica la carpeta [LandingPage](./Practicas/LandingPage/), donde doy mi solución a la práctica propuesta.
+
+11. Las pseudoclases permiten controlar estilos dependiendo del estado del elemento html a partir de la interacción del usuario, pueden observarse los ejemplos en la carpeta [Pseudoclases](./Pseudoclases/)

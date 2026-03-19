@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.box{
+    display: block;
+    background: black;
+    width: 56px;
+    height: 56px;
+    margin: 8px 0 8px 8px;
+    text-align: center;
+    line-height: 56px;
+    color: #f1f1f1;
+    font-weight: bold;
+    border-radius: 4px;  
+}
+
+.container {
+    margin-left: -4px;
+    padding: 8px 0;
+    border: 4px solid lightcoral;
+    border-radius: 8px;  
+}
+
+/* Seleccionar elementos div que tengan la clase box*/
+/* div.box{
+    background-color: darkgreen;
+} */
+
+/* Seleccionar al primer elemento único en su tipo y se encuentre en cada contenedor. 
+En este caso todos los primeros elementos que tengan la clase box y sean únicos en cada contenedor serán seleccionados*/
+.box:first-of-type{
+    background-color: darkgoldenrod;
+}
+
+/* Seleccionar al último elemento único en su tipo y se encuentre en cada contenedor. 
+En este caso todos los últimos elementos que tengan la clase box y sean únicos en cada contenedor serán seleccionados*/
+.box:last-of-type{
+    background-color: darkblue;
+}
+
+/* Seleccionar el elemento n único en su tipo y se encuentre en cada contenedor */
+/* En este caso selecciona todos los elementos que tengan la clase box, sean terceros y únicos en cada contenedor. */
+.box:nth-of-type(3){
+    background-color: darkgreen;
+}
+
+/* Puedo seleccionar a los impares */
+/* .box:nth-of-type(odd){
+    background-color: darkgreen;
+} */
+
+/* Y a los pares */
+/* .box:nth-of-type(even){
+    background-color: darkgreen;
+} */
+
+/* También se pueden hacer patrones como fórmulas matemáticas usando el iterador n */
+/* En este caso hago la fórmula para seleccionar pares */
+/* .box:nth-of-type(2n){
+    background-color: darkgreen;
+} */
+
+/* Seleccionar el elemento n único en su tipo y se encuentre en cada contenedor contando de abajo hacia arriba. Se puede usar odd, even y el iterador n*/
+/* En este caso selecciona todos los elementos que tengan la clase box, sean terceros y únicos en cada contenedor. */
+.box:nth-last-of-type(3){
+    background-color: darkslateblue;
+}
+
+/* Selecciona solo los elementos que sea único en su tipo por cada contenedor. 
+En este caso aplica estilos al elemento que tenga la clase box y que sea único en el contenedor*/
+.box:only-of-type {
+    background-color: brown;
+}
+
+/* Aplica estilos al elemento que no tenga hermanos de ningún tipo*/
+/* En este caso aplica el estilo cuando el elemento es único dentro de su contenedor y tiene la clase box */
+.box:only-child{
+    background-color: darkmagenta;
+}
+
+/*  Aplica estilos al primer elemento de cada contenedor */
+/* El primer elemento debe tener la clase .box para aplicar el estilo */
+.box:first-child {
+    background-color: darkcyan;
+}
+
+/*  Aplica estilos al último elemento de cada contenedor */
+/* El último elemento debe tener la clase .box para aplicar el estilo */
+.box:last-child {
+    background-color: darkslategray;
+}
+
+/* Aplicar estilos al hijo n del contenedor */
+/* El cuarto elemento del contenedor debe ser un elemento con la clase box para aplicar el estilo*/
+.box:nth-child(4) {
+    background-color: indigo;
+}
+
+/* Seleccionar el segundo elemento dentro un contenedor */
+.container :nth-child(2) {
+    background-color: rgb(58, 4, 34);
+}
+
+/* Aplicar estilos al primer elemento de abajo hacia arriba */
+body :nth-last-child(1){
+    border-color: darkcyan;
+}
